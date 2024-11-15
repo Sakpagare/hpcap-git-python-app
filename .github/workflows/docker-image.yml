@@ -19,9 +19,9 @@ jobs:
        USER: ${{ secrets.USER }}
        PASS: ${{ secrets.PASS }}
       run: |
-       docker build . --file Dockerfile --tag Sakpagare/hpcap-git-python-app
+       docker build . --file Dockerfile --tag Sakpagare/hpcap-ci-demo
        docker login -u $USER -p $PASS
-       docker push Sakpagare/hpcap-git-python-app
+       docker push Sakpagare/hpcap-ci-demo
 
     
     
